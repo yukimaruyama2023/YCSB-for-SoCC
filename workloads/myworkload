@@ -6,17 +6,120 @@
 #   Default data size: 1 KB records (10 fields, 100 bytes each, plus key)
 #   Request distribution: zipfian
 
-fieldlength=100000
-fieldcount=1000
-recordcount=200000
-operationcount=20000000
+# # # Initial workload
+# fieldlength=100000
+# fieldcount=1000
+# recordcount=200000
+# operationcount=20000000
+# # operationcount=200000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=1
+# updateproportion=0
+# scanproportion=0
+# insertproportion=0
+#
+# requestdistribution=zipfian
+
+
+# # This is good for testing YCSB througuput
+# fieldlength=100
+# fieldcount=100
+# recordcount=2000000
+# operationcount=200000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0
+# updateproportion=0
+# scanproportion=0
+# insertproportion=1
+#
+# requestdistribution=zipfian
+
+# # This is good for testing monitoring latency
+# fieldlength=100
+# fieldcount=100
+# recordcount=2000000
+# operationcount=2000000000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0
+# updateproportion=0
+# scanproportion=0
+# insertproportion=1
+#
+# requestdistribution=zipfian
+
+
+# # This is test
+# fieldlength=8000
+# fieldcount=100
+# recordcount=20000
+# operationcount=200000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0.5
+# updateproportion=0.4 
+# scanproportion=0
+# insertproportion=0.1
+#
+# requestdistribution=zipfian
+
+
+
+# # This works well, but 
+# fieldlength=6000
+# fieldcount=100
+# recordcount=20000
+# operationcount=200000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0.5
+# updateproportion=0.4 
+# scanproportion=0
+# insertproportion=0.1
+#
+# requestdistribution=zipfian
+
+
+# # this works without ycsb of osaka
+# fieldlength=6000
+# fieldcount=100
+# recordcount=20000
+# operationcount=2000000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0
+# updateproportion=0.5
+# scanproportion=0
+# insertproportion=0.5
+#
+# requestdistribution=zipfian
+
+# test
+fieldlength=3000
+fieldcount=100
+recordcount=20000
+operationcount=2000000
 workload=site.ycsb.workloads.CoreWorkload
 
 readallfields=true
 
 readproportion=0
-updateproportion=1
+updateproportion=0.5
 scanproportion=0
-insertproportion=0
+insertproportion=0.5
 
 requestdistribution=zipfian

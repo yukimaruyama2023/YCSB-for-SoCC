@@ -1,0 +1,10 @@
+recordcount=1000000
+fieldcount=10
+fieldlength=1000
+
+readproportion=0
+updateproportion=0
+scanproportion=0
+insertproportion=1
+
+requestdistribution=sequential
