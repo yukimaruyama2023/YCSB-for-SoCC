@@ -20,6 +20,3 @@ for ((i = 0; i < NUM_INSTANCES; i++)); do
 		-threads $(nproc) \
 		>"LOG/output-${PORT}-Run.txt" &
 done
-
-wait
-echo "All $NUM_INSTANCES workloads run completed."

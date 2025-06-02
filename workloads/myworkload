@@ -43,16 +43,16 @@
 # # This is good for testing monitoring latency
 # fieldlength=100
 # fieldcount=100
-# recordcount=2000000
-# operationcount=2000000000
+# recordcount=200000
+# perationcount=2000000000
 # workload=site.ycsb.workloads.CoreWorkload
 #
 # readallfields=true
 #
-# readproportion=0
-# updateproportion=0
+# readproportion=0.5
+# updateproportion=0.5
 # scanproportion=0
-# insertproportion=1
+# insertproportion=0
 #
 # requestdistribution=zipfian
 
@@ -108,11 +108,61 @@
 #
 # requestdistribution=zipfian
 
+# # test
+# fieldlength=3000
+# fieldcount=200
+# recordcount=20000
+# operationcount=200000000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0
+# updateproportion=0.5
+# scanproportion=0
+# insertproportion=0.5
+#
+# requestdistribution=zipfian
+
+
 # test
-fieldlength=3000
-fieldcount=100
-recordcount=20000
-operationcount=2000000
+# fieldlength=3000
+# fieldcount=300
+# recordcount=1
+# operationcount=2000000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0
+# updateproportion=0.5
+# scanproportion=0
+# insertproportion=0.5
+#
+# requestdistribution=zipfian
+
+## It works well
+# fieldlength=300000
+# fieldcount=1
+# recordcount=1
+# operationcount=20000000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0.4
+# updateproportion=0.5
+# scanproportion=0
+# insertproportion=0.1
+#
+# requestdistribution=zipfian
+
+
+## test
+fieldlength=100000
+fieldcount=1
+recordcount=1
+operationcount=20000000
 workload=site.ycsb.workloads.CoreWorkload
 
 readallfields=true
