@@ -158,7 +158,7 @@
 # requestdistribution=zipfian
 
 
-## test
+## for latency
 fieldlength=100000
 fieldcount=1
 recordcount=1
@@ -173,3 +173,34 @@ scanproportion=0
 insertproportion=0.5
 
 requestdistribution=zipfian
+
+## test for throughput
+# fieldlength=100000
+# fieldcount=1
+# recordcount=1
+# operationcount=200000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0
+# updateproportion=0.5
+# scanproportion=0
+# insertproportion=0.5
+#
+# requestdistribution=zipfian
+
+# fieldlength=100000
+# fieldcount=1
+# recordcount=1
+# operationcount=100000
+# workload=site.ycsb.workloads.CoreWorkload
+#
+# readallfields=true
+#
+# readproportion=0.5
+# updateproportion=0.5
+# scanproportion=0
+# insertproportion=0
+#
+# requestdistribution=zipfian
