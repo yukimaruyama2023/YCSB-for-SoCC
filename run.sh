@@ -1,11 +1,17 @@
 #!/bin/bash
 
-NUM_INSTANCES=10
+# 引数がない場合はメッセージを出して終了
+if [ $# -lt 1 ]; then
+	echo "Usage: $0 <NUM_INSTANCES>"
+	echo "Error: NUM_INSTANCES not provided."
+	exit 1
+fi
+
+NUM_INSTANCES=$1
 BASE_PORT=11211
 WORKLOAD_FILE="workloads/myworkload"
 HOST_ID=$(hostname)
 
-# memcached ホストリストを作成
 MEMCACHED_HOSTS=""
 for ((i = 0; i < NUM_INSTANCES; i++)); do
 	PORT=$((BASE_PORT + i))

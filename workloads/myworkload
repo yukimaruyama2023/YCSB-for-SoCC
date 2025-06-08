@@ -204,3 +204,14 @@ requestdistribution=zipfian
 # insertproportion=0
 #
 # requestdistribution=zipfian
+ 
+
+# recordcount=1000000        # 少なくとも10万件のキーを用意
+# operationcount=20000000    # 今のままでOK
+# fieldlength=1000           # 10万は大きすぎて、L3キャッシュやmemcached設計の上限を圧迫する可能性あり
+# fieldcount=10              # 少し複雑に
+# requestdistribution=zipfian
+#
+# readproportion=0.2
+# updateproportion=0.4
+# insertproportion=0.4       # 書き込み中心構成は維持
