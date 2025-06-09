@@ -24,4 +24,4 @@ MEMCACHED_HOSTS="${MEMCACHED_HOSTS%,}"
 numactl --cpunodebind=1 --membind=1 ./bin/ycsb run memcached -s -P "$WORKLOAD_FILE" \
 	-p "memcached.hosts=$MEMCACHED_HOSTS" \
 	-p "insert.key_prefix=${HOST_ID}_" \
-	-threads 24 >"LOG/output-multi-Run.txt"
+	-threads 24 >"NUMA-LOG/output-multi-Run.txt"
